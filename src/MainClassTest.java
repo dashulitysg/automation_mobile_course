@@ -1,16 +1,20 @@
 import org.junit.Test;
 
-public class MainClassTest {
+public class MainClassTest extends MainClass
+{
 
     @Test
-    public void testGetLocalNumber()
+    public void testGetClassNumber()
     {
         MainClass mainClass = new MainClass();
-        int a = mainClass.getLocalNumber();
-        if(a == 14) {
-            System.out.println("Correct number");
+        int a = mainClass.getClassNumber();
 
-        } else {
+        if (a > 45)
+        {
+            System.out.println("Correct number");
+        }
+        else
+        {
             System.out.println("Incorrect number");
         }
     }

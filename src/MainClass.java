@@ -2,11 +2,9 @@ import org.junit.Test;
 
 public class MainClass {
 
-    int a = 14;
+    private int class_number = 20;
 
-    public int getLocalNumber()
-    {
-        System.out.println(a);
-        return a;
+    public int getClassNumber() {
+        return class_number;
     }
 }
