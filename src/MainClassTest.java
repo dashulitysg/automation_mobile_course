@@ -1,21 +1,19 @@
 import org.junit.Test;
 
-public class MainClassTest extends MainClass
+public class MainClassTest
 {
 
     @Test
-    public void testGetClassNumber()
+    public void testGetClassString()
     {
         MainClass mainClass = new MainClass();
-        int a = mainClass.getClassNumber();
-
-        if (a > 45)
-        {
-            System.out.println("Correct number");
+        boolean isContain = mainClass.getClassString().contains("Hello") || mainClass.getClassString().contains("hello");
+        if (isContain == true) {
+            System.out.println("Validation passed");
         }
         else
         {
-            System.out.println("Incorrect number");
+            System.out.println("Validation failed");
         }
     }
 }
